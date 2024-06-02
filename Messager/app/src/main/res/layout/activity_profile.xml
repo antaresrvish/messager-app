@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity"
+    android:background="@color/BackgroundColorBackLayer">
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textProfile"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=  "@string/profile"
+        android:textColor="@color/FirstTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_content_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textProfile"
+        android:padding="40dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/layout_Image"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:shape="ring">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/background_icon"
+                        android:scaleType="centerCrop"
+                        app:riv_oval="true"
+
+                        />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/textName"
+                    android:text="@string/name_profile"
+                    android:textColor="@color/FirstTextColor"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="-10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/profilenameinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/name"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/change_your_name"
+                    android:padding="10dp"
+                    android:textColor="@color/FirstTextColor"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textColorHint="@color/SecondTextColor">
+
+                </EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/textEmail"
+                    android:text="@string/email_profile"
+                    android:textColor="@color/FirstTextColor"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="-10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/profileemailinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/userlogin"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/change_your_email"
+                    android:padding="10dp"
+                    android:textColor="@color/FirstTextColor"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textColorHint="@color/SecondTextColor">
+
+                </EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/textPassword"
+                    android:text="@string/password_profile"
+                    android:textColor="@color/FirstTextColor"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="-10sp">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/profilepasswordinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:hint="@string/change_your_password"
+                    android:padding="10dp"
+                    android:textColor="@color/FirstTextColor"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textColorHint="@color/SecondTextColor">
+
+                </EditText>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:animateLayoutChanges="true">
+
+                    <Button
+                        android:id="@+id/profile_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:backgroundTint="@color/FrontColorBlue"
+                        android:text="@string/change"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:cornerRadius="20dp">
+                    </Button>
+                    <ProgressBar
+                        android:id="@+id/profile_progressbar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navbar"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+            app:itemRippleColor="#00000000"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconSize="20dp"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_navigation" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

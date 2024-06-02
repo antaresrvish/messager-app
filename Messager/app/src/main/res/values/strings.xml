@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">yasuitalk</string>
+    <string name="add_image">Add Image</string>
+    <string name="select_user">Select User</string>
+    <string name="message_gir">message gir</string>
+    <string name="online">online</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="change_your_email">Change your email</string>
+    <string name="email">Email</string>
+    <string name="change_your_name">Change your name</string>
+    <string name="name">Name</string>
+    <string name="profile">Profile (not in service)</string>
+    <string name="change">CHANGE</string>
+    <string name="name_profile">Name</string>
+    <string name="email_profile">Email</string>
+    <string name="password_profile">Password</string>
+    <string name="change_your_password">Change your password</string>
+    <string name="test" />
+</resources>
